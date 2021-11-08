@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+		"cSpell.words": [
+			"chakra",
+			"Nagoda",
+			"truetype"
+		]
+	}
+}
