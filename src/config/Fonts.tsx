@@ -4,22 +4,25 @@ export const Fonts = () => (
   <Global
     styles={`
       @font-face {
-        font-family: "Nagoda";
+        font-family: 'Nagoda';
+        src: local('Nagoda'), local('NagodaRegular'),
+          url('assets/fonts/Nagoda/Nagoda.woff2') format('woff2'),
+          url('assets/fonts/Nagoda/Nagoda.woff') format('woff'),
+          url('assets/fonts/Nagoda/Nagoda.ttf') format('truetype');
+        font-weight: bold;
         font-style: normal;
-        font-weight: 700;
         font-display: swap;
-        src: local('Nagoda')
-            url("./fonts/Nagoda.ttf") format("truetype"),
       }
 
-
       @font-face {
-        font-family: "Magnolia";
+        font-family: 'Magnolia';
+        src: local('Magnolia'), local('OriginalMagnolia')
+          url('assets/fonts/Magnolia/Magnolia.woff2') format('woff2'),
+          url('assets/fonts/Magnolia/Magnolia.woff') format('woff'),
+          url('assets/fonts/Magnolia/Magnolia.ttf') format('truetype');
+        font-weight: normal;
         font-style: normal;
-        font-weight: 400;
         font-display: swap;
-        src: local('Magnolia')
-            url("./fonts/Magnolia.ttf") format("truetype"),
       }
     `}
   />
