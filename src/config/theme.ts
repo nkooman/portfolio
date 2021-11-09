@@ -1,19 +1,23 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, ThemeConfig } from '@chakra-ui/react';
 import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools';
 
 export const theme = extendTheme({
+  config: {
+    initialColorMode: 'dark',
+    useSystemColorMode: true,
+  } as ThemeConfig,
   fonts: {
     heading: 'Nagoda',
     body: 'Magnolia',
   },
   colors: {
-    white: 'hsl(0, 100%, 95%)',
-    black: 'hsl(0, 0%, 5%)',
-    coffee: 'hsl(24, 38%, 36%)',
-    camel: 'hsl(35, 27%, 52%)',
-    almond: 'hsl(29, 41%, 88%)',
-    olive: 'hsl(74, 19%, 36%)',
-    rifle: 'hsl(80, 17%, 24%)'
+    white: 'hsl(0deg, 100%, 95%)',
+    black: 'hsl(0deg, 0%, 5%)',
+    blue: 'hsl(197deg, 100%, 72%)',
+    pink: 'hsl(337deg, 100%, 72%)',
+    salmon: 'hsl(16deg, 100%, 72%)',
+    orange: 'hsl(43deg, 100%, 72%)',
+    yellow: 'hsl(69deg, 100%, 72%)'
   },
   styles: {
     global: (props: StyleFunctionProps) => ({
