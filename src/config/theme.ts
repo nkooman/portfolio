@@ -11,7 +11,7 @@ export const theme = extendTheme({
     body: 'Magnolia',
   },
   colors: {
-    white: 'hsl(0deg, 100%, 95%)',
+    white: 'hsl(0deg, 0%, 90%)',
     black: 'hsl(0deg, 0%, 5%)',
     blue: 'hsl(197deg, 100%, 72%)',
     pink: 'hsl(337deg, 100%, 72%)',
